@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TES</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<!-- <link rel="stylesheet" type="text/css" href="reset.css"> -->
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Muli:700,900" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div id="mobilenav">
+		<div id="menutoggle" class="menu">
+		<label for="menutoggle" id="circle">
+			<span class="circlespan" id="circlespan1"></span> 
+			<span class="circlespan" id="circlespan2"></span>
+			<span class="circlespan" id="circlespan3"></span>
+		</label>
+		</div>
+		<ul id="mobilemenu" class="menu">
+			<li class="mobileitems"><a href="#exptitle">About</a></li>
+			<li class="mobileitems"><a href="#bgtop">Testimonials</a></li>
+			<li class="mobileitems"><a href="#contactform">Contact</a></li>
+		</ul>
+	</div>
+	<div class="container">
+		<header>
+			<img class="bulb" src="https://res.cloudinary.com/devsbmjth/image/upload/q_auto/v1562366908/TES/bulbicon.png">
+			<nav id="nav">
+				<ul>
+					<li class="nav" id="aboutnav"><a href="#exptitle">About</a></li>
+					<li class="nav"><a href="#bgtop">Testimonials</a></li>
+					<li class="nav"><a href="#contactform">Contact</a></li>
+				</ul>
+			</nav>
+				<h1 id="main-title">Towery Electrical Services</h1>
+				<h4 id="sub-title">"Most Anything Electric"</h4>
+		</header>
+		<div id="ctaparent">
+			<a href="#contactform">Contact Us</a>
+		</div> 
+		<div id="tesbody">
+			<div class="cards cardsexp">
+				<div class="exp">
+					<h3 id="exptitle">What do we do?</h3>
+					<div class="expcards">
+						<div class="cards-res">
+							<div class="res-card">
+								<img class="cardsimg" alt="house construction showing wall studs with electrical wiring and plumbing ran through studs" src="https://res.cloudinary.com/devsbmjth/image/upload/q_auto/v1574378962/TES/res-card.jpg">
+								<h3>Residential</h3>
+								<p class="expcarddesc">We have over 30 years of experience in Residential wiring. From new builds to that remodel youve been putting off, we can meet all of your Residential electrical needs.</p>
+							</div>
+						</div>
+						<div class="cards-com">
+							<img class="cardsimg" alt="mainstreet style store frontage" src="https://res.cloudinary.com/devsbmjth/image/upload/q_auto/v1562366873/TES/com-card.jpg">
+							<h3>Commercial</h3>
+							<p>We have over 30 years of experience in Residential wiring. From new builds to that remodel youve been putting off, we can meet all of your Residential electrical needs.</p>
+						</div>
+						<div class="con-ind">
+							<div class="cards-ind">
+								<img class="cardsimg" alt="inside of an industrial building showing two garage style doors 42trreeqq" src="https://res.cloudinary.com/devsbmjth/image/upload/q_auto/v1562366988/TES/indCard.jpg">
+								<h3>Industrial</h3>
+								<p>We have over 30 years of experience in Residential wiring. From new builds to that remodel youve been putting off, we can meet all of your Residential electrical needs.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="background" id="bgtop">
+			<h3 class="bgtitle">What people think of our work.</h3>
+		</div>
+		<div id="tesbody">
+			<div class="cards" id="cardtest">
+					<div class="card2" id="testcard1">
+						<p>Mr. Towery is an honest, hardworking and a Christian man. He does an excellent job at a reasonable price. We were completely satisfied when he did electrical work for us. We highly recommend him. -Libby S.</p>
+					</div>
+					<div class="card2" id="testcard2">
+						<p>Kevin has helped me out several times. He is very responsive and professional. He is my go-to electrician. -Sallie C.</p>
+					</div>
+			</div>
+		</div>
+		<div class="background" id="bgbtm">
+			<h3 class="bgtitle">Contact Us</h3>
+		</div>	
+		<div id="tesbody">
+			<div class="cards">
+				<div id="form">
+					<form id="contactform" action="https://formspree.io/kevin@toweryelectrical.com" method="POST">
+						<textarea placeholder="Name" class="formtext" name="name"></textarea>
+						<textarea placeholder="Email" class="formtext" name="_replyto"></textarea>
+						<textarea placeholder="Phone Number" class="formtext" name="telephone"></textarea>
+						<textarea id="desc" placeholder="Quick Description of Work Needed" class="formtext" name="complaint"></textarea>
+						<input type="submit" value="Send Email" id="emailsend">
+						<div id="call">
+							<a id="phnumbersend" href="tel:828-447-5924">Call Us</a>
+						</div>
+					</form> 
+				</div>
+				<div id="map">
+					<script>
+						var coveragearea = {
+							home: {
+							},
+						};
+				
+						function initMap() {
+							var map = new google.maps.Map(document.getElementById('map'), {
+							zoom: 8,
+							center: {lat: 35.518904, lng: -81.66187300000002},
+							mapTypeId: 'terrain'
+						});
+				
+						for (var home in coveragearea) {
+							var cityCircle = new google.maps.Circle({
+								strokeColor: '#F6DC00',
+								strokeOpacity: 0,
+								strokeWeight: 5,
+								fillColor: '#F6DC00',
+								fillOpacity: 0.55,
+								map: map,
+								center: {lat: 35.518904, lng: -81.66187300000002},
+								radius: 83856
+								});
+							  }
+							}
+					</script>
+					<script async defer
+						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj6yPgXDtkT9z-Uzmd5BLBKcD0FBDtjhY&callback=initMap">
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<hr id="line">
+		<div id="footerleft">
+			<div id="bulbftrparent">
+				<img id="bulbftr" src="https://res.cloudinary.com/devsbmjth/image/upload/q_auto/v1562366908/TES/bulbicon.png">
+			</div>
+			<div id="address">
+				<p class="footerp">&#169; Towery Electrical Service</p>
+				<p class="footerp">Bostic NC</p>
+				<p class="footerp">(828) 447-5924</p>
+				<p id="datewide" class="footerp">&#169; 2019 KRT Development</p>
+			</div>
+			<div id="ftrnavparent">
+				<ul>
+					<li class="ftrnav"><a href="#mobilenav">Home</a></li>
+					<li class="ftrnav dot">&#183;</li>
+					<li class="ftrnav"><a href="#exptitle">About</a></li>
+					<li class="ftrnav dot">&#183;</li>
+					<li class="ftrnav"><a href="#bgtop">Testimonials</a></li>
+					<li class="ftrnav dot">&#183;</li>
+					<li class="ftrnav"><a href="#contactform">Contact</a></li>
+					<li class="ftrnav dot">&#183;</li>
+					<li class="ftrnav"><a href="">Privacy Policy</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="footerright">
+			<p class="footerp" id="date">&#169; 2019 KRT Development</p>
+			<p class="footerp" id="ftrstatement">Towery Electrical Services is a family owned and ran business with over 30 years of experience. If you need an electrician give us a try and let us brighten your day.</p>
+			<div id="socialmedia">
+				<a href="https://www.google.com/search?client=firefox-b-1-d&q=electrician&npsic=0&rflfq=1&rlha=0&rllag=35444667,-82251925,7292&tbm=lcl&ved=2ahUKEwiqsOzy99DiAhWJMd8KHQ3qAnoQtgN6BAgKEAQ&tbs=lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2&rldoc=1#rlfi=hd:;si:10003317444860101151;mv:!1m2!1d35.57307398853007!2d-81.64973485036518!2m2!1d35.40562879199682!2d-81.85229527516987!4m2!1d35.489395004726745!2d-81.75101506276752!5i13">
+					<img id="google" src="https://res.cloudinary.com/devsbmjth/image/upload/q_auto/v1562366922/TES/Google.png">
+				</a>
+				<a href="https://www.facebook.com/ToweryElectrical/">
+					<img id="facebook" src="https://res.cloudinary.com/devsbmjth/image/upload/q_auto/v1562366915/TES/Facebook.png">
+				</a>
+			</div>
+			<div id="ftrnavparent2">
+				<ul>
+					<li class="ftrnav"><a href="#mobilenav">Home</a></li>
+					<li class="ftrnav dot">&#183;</li>
+					<li class="ftrnav"><a href="#exptitle">About</a></li>
+					<li class="ftrnav dot">&#183;</li>
+					<li class="ftrnav"><a href="#bgtop">Testimonials</a></li>
+					<li class="ftrnav dot">&#183;</li>
+					<li class="ftrnav"><a href="#contactform">Contact</a></li>
+					<li class="ftrnav dot">&#183;</li>
+					<li class="ftrnav"><a href="">Privacy Policy</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- Javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>
+	
+		$(document).ready(function(){
+			$('#menutoggle').on('click', function(e){
+				$(this).toggleClass('menu').toggleClass('menuexpand');
+			});
+			$('#mobilemenu').on('click', function(e){
+				e.stopPropagation();
+			});
+			$('.container').on('click', function(e){
+			 	$('#menutoggle').removeClass('menuexpand').addClass('menu');
+			});
+		});
+	</script>
+</body>
+</html>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
